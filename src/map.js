@@ -27,6 +27,12 @@ function Map({
   modalState,
   buildingsInfo
 }) {
+
+  /*mapPolygons.map(mapPolygon => (
+    console.log(mapPolygon)
+  ))*/
+
+  //console.log(key);
   return (
     <GoogleMap
       /* defaultZoom={16.5}
@@ -43,11 +49,12 @@ function Map({
         ]
       }}
     >
-      <div>
-        {mapPolygons.map(mapPolygon => (
-          <div key={key++}> {mapPolygon} </div>
-        ))}
-      </div>
+
+      
+      
+      <div key={key = (key + 1) %2}>{mapPolygons}</div>
+        
+      
 
       <DirectionsDisplay
         visible={currentDirectionsState}
