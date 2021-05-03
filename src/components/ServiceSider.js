@@ -1,5 +1,7 @@
 import React from 'react';
 import { Layout, Menu, Icon } from 'antd';
+import axios from 'axios';
+
 import servicesData from '../sampledata/data.json'
 const { Sider } = Layout;
 const { SubMenu } = Menu;
@@ -14,9 +16,9 @@ export default class ServiceSider extends React.Component {
 
   
   componentDidMount(){
-
-    servicesData.forEach(service=>{
     
+    axios.get('http://localhost:4000/services_menu').then(res => {
+      res.data.forEach(service => {
         mapServices.push(
           <SubMenu
             key={service.subMenu.key}
@@ -38,15 +40,13 @@ export default class ServiceSider extends React.Component {
   
           </SubMenu>
 
-        ) 
-    })
-    
+        )
+      });
 
-    this.setState({
-      services: mapServices
+      this.setState({
+        services: mapServices
+      });
     });
-
-
   }
 
 
