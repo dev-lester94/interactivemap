@@ -15,6 +15,7 @@ let mapPolygons = [];
 let buildingInfo = [];
 let hoverTimeout;
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -91,6 +92,7 @@ class App extends Component {
       }
 
       mapPolygons[polygonIndex].props.options.fillColor = '#FF0000';
+      //console.log("make red");
 
       this.setState({
         polygon: mapPolygons
@@ -177,8 +179,11 @@ class App extends Component {
         coords.push(buildingInfo[i].outer);
         coords.push(buildingInfo[i].inner);
 
+        //console.log(buildingInfo[i]._id)
+
         mapPolygons.push(
           <Polygon
+            key={buildingInfo[i]._id}
             paths={coords}
             options={{
               strokeColor: '#36688F',
@@ -194,6 +199,8 @@ class App extends Component {
         );
         coords = [];
       }
+
+      //console.log("here" + mapPolygons[0].key);
       this.setState({
         polygon: mapPolygons
       });
@@ -244,7 +251,8 @@ class App extends Component {
             </div>
 
             <WrappedMap
-              googleMapURL={`REPLACE_WITH_YOUR_GOOGLE_MAP_API`}
+              //googleMapURL={`https://maps.googleapis.com/maps/api/js?key=`}
+              googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyAtaPdeu0TgDHxApUubSPSP3t4YygVg2Jg`}
               loadingElement={<div style={{ height: `100%` }} />}
               containerElement={<div style={{ height: `100%` }} />}
               mapElement={<div style={{ height: `100%` }} />}

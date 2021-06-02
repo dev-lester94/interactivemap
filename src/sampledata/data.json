@@ -1,0 +1,306 @@
+[
+    {
+        "subMenu": {
+            "key":"sub1",
+            "icon": "bank",
+            "name":"Academic & Adminstrative"
+        },
+        "menuItems":[
+            {
+                "key": "2",
+                "buildingName": "Administration"
+            },
+            {
+                "key": "3",
+                "buildingName": "Boccardo Business Center"
+            },
+            {
+                "key": "4",
+                "buildingName": "Business Tower"
+            },
+            {
+                "key": "5",
+                "buildingName": "Career Center"
+            },
+            {
+                "key": "6",
+                "buildingName": "Central Classroom Building"
+            },
+            {
+                "key": "7",
+                "buildingName": "Clark Hall"
+            },
+            {
+                "key": "8",
+                "buildingName": "Computer Center"
+            },
+            {
+                "key": "9",
+                "buildingName": "Davidson College of Engineering"
+            },
+            {
+                "key": "10",
+                "buildingName": "Dudley Moorehead Hall"
+            },
+            {
+                "key": "11",
+                "buildingName": "Duncan Hall"
+            },
+            {
+                "key": "12",
+                "buildingName": "Dwight Bentel Hall"
+            },
+            {
+                "key": "13",
+                "buildingName": "Health Building"
+            },
+            {
+                "key": "14",
+                "buildingName": "Hugh Gillis Hall"
+            },
+            {
+                "key": "15",
+                "buildingName": "Industrial Studies Building"
+            },
+            {
+                "key": "16",
+                "buildingName": "Instructional Resource Center"
+            },
+            {
+                "key": "17",
+                "buildingName": "MacQuarrie Hall"
+            },
+            {
+                "key": "18",
+                "buildingName": "Science Building"
+            },
+            {
+                "key": "19",
+                "buildingName": "Spartan Complex Central"
+            },
+            {
+                "key": "20",
+                "buildingName": "Spartan Complex East"
+            },
+            {
+                "key": "21",
+                "buildingName": "Spartan Memorial"
+            },
+            {
+                "key": "22",
+                "buildingName": "Sweeney Hall"
+            },
+            {
+                "key": "23",
+                "buildingName": "Tower Hall"
+            },
+            {
+                "key": "24",
+                "buildingName": "Washington Square Building"
+            },
+            {
+                "key": "25",
+                "buildingName": "Yoshihiro Uchida Hall"
+            }
+            
+        ]  
+    },
+    {
+        "subMenu": {
+            "key":"sub2",
+            "icon": "audio",
+            "name":"Arts & Performance"
+        },
+        "menuItems":[
+            {
+                "key": "26",
+                "buildingName": "Event Center"
+            },
+            {
+                "key": "27",
+                "buildingName": "Music Building"
+            }
+        ]  
+    },
+    {
+        "subMenu": {
+            "key":"sub3",
+            "icon": "trophy",
+            "name":"Athletic & Recreation"
+        },
+        "menuItems":[
+            {
+                "key": "28",
+                "buildingName": "Spartan Recreation and Aquatic Center"
+            }
+        ]  
+    },
+    {
+        "subMenu": {
+            "key":"sub4",
+            "icon": "wallet",
+            "name":"Dining"
+        },
+        "menuItems":[
+            {
+                "key": "29",
+                "buildingName": "Dining Commons"
+            },
+            {
+                "key": "30",
+                "buildingName": "Student Union"
+            }
+        ]  
+    },
+    {
+        "subMenu": {
+            "key":"sub5",
+            "icon": "alert",
+            "name":"Emergency Resources"
+        },
+        "menuItems":[
+            {
+                "key": "31",
+                "buildingName": "Student Wellness Center"
+            },
+            {
+                "key": "32",
+                "buildingName": "University Police Department"
+            }
+        ]  
+    },
+    {
+        "subMenu": {
+            "key":"sub6",
+            "icon": "home",
+            "name":"Housing"
+        },
+        "menuItems":[
+            {
+                "key": "33",
+                "buildingName": "Campus Village 2"
+            },
+            {
+                "key": "34",
+                "buildingName": "Campus Village A"
+            },
+            {
+                "key": "35",
+                "buildingName": "Campus Village B"
+            },
+            {
+                "key": "36",
+                "buildingName": "Campus Village C"
+            },
+            {
+                "key": "37",
+                "buildingName": "Joe West Housing"
+            },
+            {
+                "key": "38",
+                "buildingName": "Washburn Hall"
+            }
+        ]  
+    },
+    {
+        "subMenu": {
+            "key":"sub7",
+            "icon": "book",
+            "name":"Libaries"
+        },
+        "menuItems":[
+            {
+                "key": "39",
+                "buildingName": "Martin Luther King Jr. Library"
+            }
+        ]  
+    },
+    {
+        "subMenu": {
+            "key":"sub8",
+            "icon": "car",
+            "name":"Parking"
+        },
+        "menuItems":[
+            {
+                "key": "40",
+                "buildingName": "North Parking Garage"
+            },
+            {
+                "key": "41",
+                "buildingName": "South Parking Garage"
+            },
+            {
+                "key": "42",
+                "buildingName": "West Parking Garage"
+            }
+            
+        ]  
+    },
+    {
+        "subMenu": {
+            "key":"sub9",
+            "icon": "printer",
+            "name":"Printing"
+        },
+        "menuItems":[
+            {
+                "key": "43",
+                "buildingName": "Campus Village 2"
+            },
+            {
+                "key": "44",
+                "buildingName": "Campus Village B"
+            },
+            {
+                "key": "45",
+                "buildingName": "Campus Village C"
+            },
+            {
+                "key": "46",
+                "buildingName": "Clark Hall"
+            },
+            {
+                "key": "47",
+                "buildingName": "Davidson College of Engineering"
+            },
+            {
+                "key": "48",
+                "buildingName": "Duncan Hall"
+            },
+            {
+                "key": "49",
+                "buildingName": "Industrial Studies Building"
+            },
+            {
+                "key": "50",
+                "buildingName": "Joe West Housing"
+            },
+            {
+                "key": "51",
+                "buildingName": "Martin Luther King Jr. Library"
+            },
+            {
+                "key": "52",
+                "buildingName": "Science Building"
+            },
+            {
+                "key": "53",
+                "buildingName": "Student Union"
+            },
+            {
+                "key": "54",
+                "buildingName": "Sweeney Hall"
+            },
+            {
+                "key": "55",
+                "buildingName": "Washington Square Building"
+            }
+            
+        ]  
+    }
+
+   
+
+   
+]
