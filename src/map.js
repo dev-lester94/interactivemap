@@ -3,8 +3,6 @@ import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps';
 import { Drawer } from 'antd';
 import DirectionWindow from './components/directionWindow';
 import DirectionsDisplay from './components/directionsDisplay';
-// const { compose, withProps, lifecycle } = require("recompose");
-// import { compose, withProps, lifecycle } from "recompose"
 
 let key = 0;
 
@@ -35,11 +33,10 @@ function Map({
   //console.log(key);
   return (
     <GoogleMap
-      /* defaultZoom={16.5}
-      defaultCenter={center} */
       zoom={zoom}
       center={center}
       options={{
+        gestureHandling: 'greedy',
         styles: [
           {
             elementType: 'labels',
@@ -72,8 +69,6 @@ function Map({
       visible={currentDrawerState}
       >
         
-      {/* <h4>Charles W. Davidson College of Engineering</h4> */}
-      {/* eslint-disable-next-line */}
       <img src={require(`${drawerInfos.img}`)}></img>
       <p>About {drawerInfos.name}:</p>
       <p>{drawerInfos["building desc"]}</p>
@@ -91,9 +86,7 @@ function Map({
         initialDest={drawerInfos.name}
         buildingsInfo={buildingsInfo}
         />
-        {/* <div>
-           {drawerInfos.services.map(service => <li key={key2++}> {service} </li>)}
-       </div> */}
+
       </Drawer>
     </GoogleMap>
   );

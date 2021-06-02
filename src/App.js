@@ -33,7 +33,7 @@ class App extends Component {
     polygon: [],
     info: { img: './css/engbuilding1.jpg' },
     center: { lat: 37.3352, lng: -121.8811 },
-    zoom: 16.5,
+    zoom: window.innerWidth < 750 ? 15.5 : 16.5,
     clickedPolygonIndex: -1
   };
 
@@ -42,7 +42,6 @@ class App extends Component {
   }
 
   onCollapse = collapsed => {
-    //console.log(collapsed);
     this.setState({ collapsed });
   };
 
@@ -60,22 +59,18 @@ class App extends Component {
   };
 
   showModal = () => {
-    // console.log('change to showModal');
     this.setState({ modalState: true });
   };
 
   hideModal = () => {
-    // console.log('change to hideModal');
     this.setState({ modalState: false });
   };
 
   showDirections = () => {
-    // console.log('change to showDirections');
     this.setState({ showDirections: true });
   };
 
   hideDirections = () => {
-    // console.log('change to hideDirections');
     this.setState({ showDirections: false });
   };
 
@@ -91,7 +86,6 @@ class App extends Component {
       let polygonIndex;
       for (var i = 0; i < buildingInfo.length; i++) {
         if (buildingInfo[i].name === name) {
-          //console.log(mapPolygonsData[i].name);
           polygonIndex = i;
           break;
         }
@@ -167,19 +161,12 @@ class App extends Component {
       visible: true,
       clickedPolygonIndex: polygonIndex,
       center: { lat: polygonData[0].center.lat, lng: polygonData[0].center.lng },
-      zoom: 16.5
+      zoom: window.innerWidth < 750 ? 16.5 : 17.5
     });
   };
 
-  /*Add sample info to make sure the drawer has some information from the start
-  Grab all the polygons json objects and store in mapPolygonData
-  Create the polygons and store in mapPolygonsData
-  clickPolygon is passed the name of the building that was clicked. Set states with info for the drawer, center the map with polygon, and make the drawer visible
-  clickPolygon is passed the name of the building that was clicked and center the map with polygon
-
-  */
   componentDidMount() {
-    axios.get('http://www.localhost:4000/polygons').then(res => {
+    axios.get('http://ec2-54-193-204-163.us-west-1.compute.amazonaws.com:4000/polygons').then(res => {
       res.data.forEach(building => {
         if ((building.outer !== undefined) & (building.inner !== undefined)) {
           buildingInfo.push(building);
@@ -262,7 +249,7 @@ class App extends Component {
                 </Button>
               )}
             </div>
-            {/* <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>Bill is a cat.</div> */}
+
             <WrappedMap
               //googleMapURL={`https://maps.googleapis.com/maps/api/js?key=`}
               googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyAtaPdeu0TgDHxApUubSPSP3t4YygVg2Jg`}
